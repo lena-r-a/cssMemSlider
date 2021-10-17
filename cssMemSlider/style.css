@@ -61,8 +61,11 @@ body {
   border: 0.4rem solid #71BAFF;
 }
 .control {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .control:hover {cursor: pointer;}
 .control:hover .item {
@@ -158,8 +161,8 @@ input[name="radio"] {
     height: 2rem;
   }
   .control {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
   }
   .centered {
     margin: 8% auto auto;
