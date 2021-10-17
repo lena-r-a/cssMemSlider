@@ -7,27 +7,36 @@ body {background-color: black;}
 
 .slider {
   width: 80%;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
   border-radius: 20px;
-  /* border: 2px solid white; */
 }
 
 .centered {
-  /* position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%); */
   margin: 50px auto auto;
 }
 
 .underSlide {
   display: flex;
-  width: 80%;
+  width: 85%;
   margin: 50px auto auto;
   justify-content: space-between;
 }
+.text-slider {
+  width: 80%;
+  overflow: hidden;
+}
 
+.text-slides {
+  width: 400%;
+  display: flex;
+}
+.text-slide {
+  color: white;
+  width: 25%;
+  height: 100%;
+  font-size: 32px;
+}
 .navigation {
   width: 20%;
   display: flex;
@@ -51,11 +60,11 @@ input[name="radio"] {
   visibility: hidden;
   position:absolute;
 }
-.side {
+.slide {
   width: 25%;
-    transition: all .6s ease;
+  transition: all .6s ease;
 }
-.side img {
+.slide img {
   width: 100%;
   height: 100%;
   /* object-fit: contain; */
@@ -64,26 +73,58 @@ input[name="radio"] {
 
 .slides {
   width: 500%;
-  height: 100%;
+  height: 80%;
   display: flex;
 }
 
-#radio1:checked ~ slide1 {
+#radio1:checked ~ .slides .slide1 {
   margin-left: 0;
 }
 
-#radio1:checked ~ slide1 {
+#radio2:checked ~ .slides .slide1 {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .slides .slide1 {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .slides .slide1 {
+  margin-left: -75%;
+}
+
+#radio1:checked ~ .underSlide .navigation .item1 {
+  background-color: transparent;
+  border: 5px solid white;
+}
+
+#radio2:checked ~ .underSlide .navigation .item2 {
+  background-color: transparent;
+  border: 5px solid white;
+}
+
+#radio3:checked ~ .underSlide .navigation .item3 {
+  background-color: transparent;
+  border: 5px solid white;
+}
+
+#radio4:checked ~ .underSlide .navigation .item4 {
+  background-color: transparent;
+  border: 5px solid white;
+}
+
+#radio1:checked ~ .underSlide .text-slider .text-slides .text-slide1 {
   margin-left: 0;
 }
 
-#radio1:checked ~ slide1 {
-  margin-left: 0;
+#radio2:checked ~ .underSlide .text-slider .text-slides .text-slide1 {
+  margin-left: -25%;
 }
 
-#radio1:checked ~ slide1 {
-  margin-left: 0;
+#radio3:checked ~ .underSlide .text-slider .text-slides .text-slide1 {
+  margin-left: -50%;
 }
 
-#radio1:checked ~ slide1 {
-  margin-left: 0;
+#radio4:checked ~ .underSlide .text-slider .text-slides .text-slide1 {
+  margin-left: -75%;
 }
