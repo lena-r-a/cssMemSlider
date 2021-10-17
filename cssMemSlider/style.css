@@ -178,9 +178,9 @@ input[name="radio"] {
   }
   .underSlide {
     flex-direction: column-reverse;
-    margin-top: 8%;
+    margin-top: 2rem;
     align-items: center;
-    gap: 3rem;
+    gap: 1.5rem;
   }
   .text-slider {
     width: 100%;
