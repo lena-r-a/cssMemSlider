@@ -26,7 +26,7 @@ body {
 .underSlide {
   display: flex;
   width: 100%;
-  margin: 3% auto auto;
+  margin: 2rem auto auto;
   justify-content: space-between;
 }
 .text-slider {
@@ -150,10 +150,17 @@ input[name="radio"] {
 }
 
 @media screen and (max-width: 480px) and (max-height: 568px) {
-  body {
+  :root {
     font-size: 12px;
   }
-  
+  .item {
+    width: 2rem;
+    height: 2rem;
+  }
+  .control {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
   .centered {
     margin: 8% auto auto;
   }
@@ -168,6 +175,7 @@ input[name="radio"] {
   }
    .navigation {
     width: 50%;
+    justify-content: space-between;
   }
   .slides {
     height: 60%;
